@@ -1,28 +1,27 @@
 import Buttons from "./components/Buttons.tsx";
 import Stats from "./components/Stats.tsx";
 import {useState} from "react";
-
+import QuoteGenerator from "./components/QuoteGenerator.tsx";
 
 function App() {
     const [goodCount, setGoodCount] = useState(0);
     const [neutralCount, setNeutralCount] = useState(0);
-    const [badCount, setBadCountCount] = useState(0);
+    const [badCount, setBadCount] = useState(0);
 
-    const [buttonType, setButtonType] = useState("");
     const handleButtonClicks=(buttonType:string):void=>{
-        if(buttonType === "good"){
-            setGoodCount(goodCount + 1);
+        switch(buttonType) {
+            case "good":
+                setGoodCount(goodCount + 1);
+                break;
+            case "neutral":
+                setNeutralCount(neutralCount + 1);
+                break;
+            case "bad":
+                setBadCount(badCount + 1);
+                break;
+            default:
+                console.log("Invalid button type");
         }
-        
-        if(buttonType === "neutral"){
-            setNeutralCount(neutralCount + 1);
-        }
-
-        if(buttonType === "bad"){
-            setBadCountCount(badCount + 1);
-        }
-        
-        setButtonType(buttonType);
     }
     
   return (
@@ -31,8 +30,8 @@ function App() {
         <Buttons handleButtonClick={handleButtonClicks}/>
         <Stats goodCount={goodCount} 
                neutralCount={neutralCount}
-               badCount={badCount}
-               buttonType={buttonType} />
+               badCount={badCount} />
+        <QuoteGenerator/>
     </>
   )
 }

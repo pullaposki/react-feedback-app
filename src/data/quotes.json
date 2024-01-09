@@ -1,0 +1,22 @@
+﻿{
+  "1": "Brooks Law: 'Adding manpower to a late software project makes it later!'",
+  "2": "The best way to get a project done faster is to start sooner --Jim Highsmith",
+  "3": "The first 90 percent of the code accounts for the first 90 percent of the development time...The remaining 10 percent of the code accounts for the other 90 percent of the development time. -- Tom Cargill",
+  "4": "Even the best planning is not so omniscient as to get it right the first time. -- Fred Brooks",
+  "5": "How does a project get to be a year late?... One day at a time. -- Fred Brooks",
+  "6": "The bearing of a child takes nine months, no matter how many women are assigned. Many software tasks have this characteristic because of the sequential nature of debugging. -- Fred Brooks",
+  "7": "Plan to throw one (implementation) away; you will, anyhow. -- Fred Brooks",
+  "8": "Every good work of software starts by scratching a developer's personal itch",
+  "9": "Perfection (in design) is achieved not when there is nothing more to add, but rather when there is nothing more to take away --Antoine de Saint-Exupery",
+  "10": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand. --Martin Fowler",
+  "11": "Program testing can be used to show the presence of bugs, but never to show their absence! --Edsger Dijkstra",
+  "12": "The belief that complex systems require armies of designers and programmers is wrong. A system that is not understood in its entirety, or at least to a significant degree of detail by a single individual, should probably not be built. --Niklaus Wirth",
+  "13": "A primary cause of complexity is that software vendors uncritically adopt almost any feature that users want. --Niklaus Wirth",
+  "14": "Prolific programmers contribute to certain disaster. --Niklaus Wirth",
+  "15": "Documentation is the castor oil of programming. Managers think it is good for programmers and programmers hate it!. --Gerald Weinberg",
+  "16": "Programming can be fun, so can cryptography; however they should not be combined. --Kreitzberg and Shneiderman",
+  "17": "Let us change our traditional attitude to the construction of programs. Instead of imagining that our main task is to instruct a computer what to to, let us concentrate rather on explaining to human beings what we want a computer to do. --Donald Knuth",
+  "18": "Good code is its own best documentation. As you’re about to add a comment, ask yourself, ‘How can I improve the code so that this comment isn’t needed?’ Improve the code and then document it to make it even clearer. --Steve McConnell",
+  "19": "It's OK to figure out murder mysteries, but you shouldn't need to figure out code. You should be able to read it. --Steve McConnell",
+  "20": "It's better to wait for a productive programmer to become available than it is to wait for the first available programmer to become productive. --Steve McConnell"
+}
