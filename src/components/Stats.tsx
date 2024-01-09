@@ -1,19 +1,25 @@
 ﻿interface Props {
-    value: number;
+    goodCount: number;
+    neutralCount: number;
+    badCount: number;
     buttonType: string;
 }
 
-const Stats = ({ value, buttonType}:Props) => {
-    
+const Stats = ({ goodCount, neutralCount, badCount, buttonType}:Props) => {
     const handleButtonValue = () => {
         if (buttonType === "good") {
             console.log("good stats up")
-            return <p>good: {value}</p>
+            return <p>{goodCount}</p>
         }
 
         if (buttonType === "neutral"){
             console.log("neutral stats up")
-            return <p>neutral: {value}</p>
+            return <p>{neutralCount}</p>
+        }
+
+        if (buttonType === "bad"){
+            console.log("bad stats up")
+            return <p>{badCount}</p>
         }
     }
     
@@ -22,7 +28,9 @@ const Stats = ({ value, buttonType}:Props) => {
     return (
         <div>
             <h1>Stats</h1>
-            <div>{handleButtonValue()}</div>
+            <p>good: {goodCount}</p> 
+            <p>neutral: {neutralCount}</p>
+            <p>bad: {badCount}</p> 
         </div>
     );
 }

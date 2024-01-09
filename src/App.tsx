@@ -1,20 +1,27 @@
-    import Buttons from "./components/Buttons.tsx";
+import Buttons from "./components/Buttons.tsx";
 import Stats from "./components/Stats.tsx";
 import {useState} from "react";
 
 
 function App() {
-    const [goodValue, setGoodValue] = useState(0);
-    const [neutralValue, setNeutralValue] = useState(0);
-    const[buttonType, setButtonType] = useState("");
+    const [goodCount, setGoodCount] = useState(0);
+    const [neutralCount, setNeutralCount] = useState(0);
+    const [badCount, setBadCountCount] = useState(0);
+
+    const [buttonType, setButtonType] = useState("");
     const handleButtonClicks=(buttonType:string):void=>{
         if(buttonType === "good"){
-            setGoodValue(goodValue + 1);
+            setGoodCount(goodCount + 1);
         }
         
         if(buttonType === "neutral"){
-            setNeutralValue(neutralValue + 1);
+            setNeutralCount(neutralCount + 1);
         }
+
+        if(buttonType === "bad"){
+            setBadCountCount(badCount + 1);
+        }
+        
         setButtonType(buttonType);
     }
     
@@ -22,7 +29,10 @@ function App() {
     <>
       <h1>give feedback</h1>
         <Buttons handleButtonClick={handleButtonClicks}/>
-        <Stats value={goodValue} buttonType={buttonType} />
+        <Stats goodCount={goodCount} 
+               neutralCount={neutralCount}
+               badCount={badCount}
+               buttonType={buttonType} />
     </>
   )
 }
